@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regulamin Serwera Axlotus.pl</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #38b6ff, #6c5ce7);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      font-size: 2.5em;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    .toc {
+      background-color: #161616;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      border-bottom: 2px solid #333;
+    }
+    .toc button {
+      background: #232323;
+      color: white;
+      border: 1px solid #444;
+      padding: 12px 24px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.2s;
+    }
+    .toc button:hover {
+      background-color: #333;
+      color: #38b6ff;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #1e1e1e;
+      border-left: 8px solid #38b6ff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(56, 182, 255, 0.4);
+      display: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .section.active {
+      display: block;
+    }
+    h2 {
+      color: #38b6ff;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+      line-height: 1.6em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+
+<header>📜 Regulamin Serwera Axlotus.pl – Minecraft & Discord</header>
+
+<div class="toc">
+  <button onclick="showSection('ogolne')">Zasady Ogólne</button>
+  <button onclick="showSection('minecraft')">Minecraft</button>
+  <button onclick="showSection('discord')">Discord</button>
+  <button onclick="showSection('społeczność')">Społeczność</button>
+  <button onclick="showSection('kary')">Kary i Sankcje</button>
+  <button onclick="showSection('techniczne')">Zasady Techniczne</button>
+  <button onclick="showSection('kontakt')">Kontakt</button>
+</div>
+
+<div id="ogolne" class="section active">
+  <h2>1. Zasady Ogólne</h2>
+  <ul>
+    <li>Każdy użytkownik serwera Axlotus.pl akceptuje niniejszy regulamin i zobowiązuje się go przestrzegać.</li>
+    <li>Administracja zastrzega sobie prawo do interpretacji i zmian regulaminu w dowolnym momencie.</li>
+    <li>Nieznajomość regulaminu nie zwalnia z obowiązku jego przestrzegania.</li>
+    <li>Administracja nie ponosi odpowiedzialności za treści tworzone przez graczy.</li>
+  </ul>
+</div>
+
+<div id="minecraft" class="section">
+  <h2>2. Zasady Minecraft</h2>
+  <ul>
+    <li>Zakaz używania jakichkolwiek cheatów, modów dających przewagę (np. X-ray, AutoClicker, KillAura).</li>
+    <li>Zakaz griefingu, trollowania, kradzieży i niszczenia cudzych budowli.</li>
+    <li>Dozwolone są mody kosmetyczne (np. Optifine), ale nie te ingerujące w rozgrywkę.</li>
+    <li>Zakaz nadużywania bugów lub błędów gry – ich wykrycie należy zgłosić administracji.</li>
+    <li>Budowle obraźliwe, niestosowne lub polityczne będą natychmiast usuwane, a gracz ukarany.</li>
+  </ul>
+</div>
+
+<div id="discord" class="section">
+  <h2>3. Zasady Discord</h2>
+  <ul>
+    <li>Zakaz spamowania, nadużywania pingów i floodowania kanałów.</li>
+    <li>Zakaz publikowania treści NSFW, brutalnych lub niezgodnych z prawem.</li>
+    <li>Obowiązuje kultura wypowiedzi – nie obrażamy, nie prowokujemy.</li>
+    <li>Nazwy użytkowników, awatary i statusy muszą być przyzwoite.</li>
+    <li>Zakaz reklamowania zewnętrznych serwerów i projektów bez zgody administracji.</li>
+  </ul>
+</div>
+
+<div id="społeczność" class="section">
+  <h2>4. Społeczność i Współpraca</h2>
+  <ul>
+    <li>Gracze powinni współpracować, wspierać się i unikać konfliktów.</li>
+    <li>Wydarzenia organizowane przez serwer są dobrowolne, ale obowiązuje w nich fair play.</li>
+    <li>Streamerzy i twórcy mogą ubiegać się o rangę Partner po spełnieniu określonych warunków.</li>
+    <li>Zgłoszenia graczy, błędów i sugestii można zgłaszać na specjalnym kanale Discorda.</li>
+  </ul>
+</div>
+
+<div id="kary" class="section">
+  <h2>5. Kary i Sankcje</h2>
+  <ul>
+    <li>Za złamanie regulaminu mogą zostać nałożone kary: mute, kick, tymczasowy lub stały ban.</li>
+    <li>Kary mogą być nadawane na serwerze Minecraft, Discord lub na obu jednocześnie.</li>
+    <li>Ostateczna decyzja należy do administracji – próby obejścia kary mogą skutkować permbanem.</li>
+    <li>Gracze mogą odwołać się od kary poprzez formularz zgłoszeniowy lub kontakt z administracją.</li>
+  </ul>
+</div>
+
+<div id="techniczne" class="section">
+  <h2>6. Zasady Techniczne</h2>
+  <ul>
+    <li>Zaleca się korzystanie z oficjalnego launchera Minecraft lub zatwierdzonych alternatyw.</li>
+    <li>Zakaz używania VPN w celu omijania blokad lub multi-kont.</li>
+    <li>Systemy zabezpieczeń (antycheat, logowanie, weryfikacja) muszą być respektowane przez graczy.</li>
+    <li>Zakaz używania botów, skryptów lub makr do automatyzacji rozgrywki.</li>
+  </ul>
+</div>
+
+<div id="kontakt" class="section">
+  <h2>7. Kontakt i Wsparcie</h2>
+  <ul>
+    <li>Oficjalny kontakt z administracją odbywa się poprzez serwer Discord: <strong>discord.gg/axlotus</strong></li>
+    <li>Zgłoszenia dotyczące graczy, błędów, reklamacji należy kierować na <code>#zgłoszenia</code>.</li>
+    <li>Na odpowiedź administracji można czekać do 48 godzin – prosimy o cierpliwość.</li>
+    <li>W sprawach pilnych należy oznaczyć administratora zgodnie z zasadami danego kanału.</li>
+  </ul>
+</div>
+
+<footer>
+  &copy; 2025 Axlotus.pl – Serwer Minecraft i Discord | Regulamin przygotowany profesjonalnie z pomocą AI
+</footer>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
